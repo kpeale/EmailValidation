@@ -5,12 +5,12 @@ const text = document.querySelector('.valid');
 
 function emailValidation() {
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(emailInput.value.match(mailformat))
+if(mailformat.match(emailInput.value))
 {
 return emailInput;
 }
 else {
-text.classList.remove('valid');
+return text.classList.remove('valid');
 }};
 
 notifyBtn.addEventListener('click', emailValidation());

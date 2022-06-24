@@ -21,9 +21,11 @@
         </div>
         <div>
         <div class="pingsection1__btnbx">
-             <input type="email" id="email" placeholder="Your email address.." >
-            <a href="#" class="pingsection1__btn">Notify me</a>
-            <p class="hide valid">Please provide a valid email adress</p>
+            <form action="">
+              <input type="email" id="email" placeholder="Your email address.." pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" class="form-control" required >
+              <button class="pingsection1__btn" type="submit">Notify me</button>
+               <p class="hide valid">Please provide a valid email adress</p>
+          </form>
         </div>
 
                
